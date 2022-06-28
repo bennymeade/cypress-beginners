@@ -6,5 +6,7 @@ Web application status codes: https://en.wikipedia.org/wiki/List_of_HTTP_status_
 
 ## Launch Cypress
 $ git clone https://github.com/bennymeade/cypress-beginners.git
+
 $ yarn install
+
 $ yarn cypress open
