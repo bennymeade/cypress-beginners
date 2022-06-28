@@ -13,5 +13,10 @@ describe('Homepage', () => {
     cy.get('[data-testid="uol-c-link-label"]').contains('Change location').should('be.visible').click();
     cy.url().should('include', '/location-selector/')
   });  
+  it('Verify search button', () => {
+    cy.visit('/');
+    cy.get('[data-testid="uol-c-button-label"]').contains('Search site').should('be.visible').click();
+    cy.url().should('include', '/search/')
+  });  
   //help
 });
