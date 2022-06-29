@@ -14,4 +14,9 @@ describe('Homepage', () => {
     cy.get('[data-testid="uol-c-link-label"]').contains('Change location').should('be.visible').click();
     cy.url().should('include', '/location-selector/')
   });
+  it('Verify Planet & Society page', () => {
+    cy.visit('/');
+    cy.get('[data-testid="uco-c-header-menu-link"]').contains('Planet & Society').should('be.visible').click();
+    cy.url().should('include', '/planet-and-society/')
+  });
 });
