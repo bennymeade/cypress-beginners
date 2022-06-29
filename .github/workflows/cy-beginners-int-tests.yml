@@ -2,7 +2,7 @@ name: learn-github-actions
 
 on: 
   workflow_dispatch:
-  # push:
+  push:
   
 jobs:
   run-int-tests:
