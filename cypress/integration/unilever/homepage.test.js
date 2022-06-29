@@ -18,4 +18,8 @@ describe('Homepage', () => {
     cy.get('[data-testid="uol-c-button-label"]').contains('Search site').should('be.visible').click();
     cy.url().should('include', '/search/')
   });  
+  it('Verify search for Ben & Jerrys', () => {
+    cy.visit('/search/');
+    cy.get('[data-testid="uol-c-form-input"]').should('be.visible').type("Ben & Jerrys{enter}")
+  })
 });
