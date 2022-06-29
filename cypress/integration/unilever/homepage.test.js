@@ -18,5 +18,4 @@ describe('Homepage', () => {
     cy.get('[data-testid="uol-c-button-label"]').contains('Search site').should('be.visible').click();
     cy.url().should('include', '/search/')
   });  
-  //help
 });
