@@ -1,7 +1,7 @@
-describe('Homepage', () => {
-    it('Verify that site logo is visible', () => {
-      cy.visit('/');
-      cy.get('[data-testid="uco-c-header-logo-link"]').should('be.visible');
+describe('Search', () => {
+    it('Verify that search works', () => {
+      cy.visit('/search/');
+      cy.get('[data-testid="uol-c-form-input"]').should('be.visible').type("dove{enter}");
     });
   });
   

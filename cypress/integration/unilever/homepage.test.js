@@ -9,8 +9,11 @@ describe('Homepage', () => {
     cy.url().should('include', '/location-selector/')
   });
   it('Verify Our company page', () => {
+
     cy.visit('/');
     cy.get('[data-testid="uco-c-header-menu-link"]').contains('Our company').should('be.visible').click();
+
     cy.url().should('include', '/our-company/')
+
   })
 });
