@@ -5,6 +5,6 @@
   "repository": "https://github.com/bennymeade/cypress-beginners.git",
   "license": "MIT",
   "devDependencies": {
-    "cypress": "^9.7.0"
+    "cypress": "^10.3.0"
   }
 }
